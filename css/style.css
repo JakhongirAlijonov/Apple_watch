@@ -1,33 +1,203 @@
 /* GLOBAL */
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
+
 
 /* CONTAINER */
+
 .container {
-  max-width: 1260px;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1500px;
+    width: 100%;
+    padding-left: 125px;
+    padding-right: 125px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.site-header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.site-nav-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav-item {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.site-nav-item:last-child {
+    margin-left: 40px;
+}
+
+.site-nav-item:hover {
+    border-bottom: 1px solid #333;
+}
+
+.site-nav-link {
+    text-decoration: none;
+    color: #333333;
+}
+
+
 /* MAIN CONTENT */
+
 .main-content {
-  flex-grow: 1;
+    flex-grow: 1;
+}
+
+.free-call {
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.free-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.free-text {
+    padding-left: 40px;
+    width: 450px;
+    border-left: 3px solid #888888;
+    margin-bottom: 42px;
+}
+
+.link {
+    margin-bottom: 197px;
+    padding: 12px 38.5px;
+    background-color: #EA625C;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.intro-bg {
+    margin-bottom: -30px;
+}
+
+.link:hover {
+    background-color: #fff;
+    color: #EA625C;
+}
+
+.central-hr {
+    border: 2px solid #DDDDDD
+}
+
+.features {
+    margin-top: 68px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.features-item {
+    list-style: none;
+    color: #333333;
+    width: 280px;
+}
+
+.features-item-title {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.more-link {
+    color: #EA625C;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.nike {
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nike-text-section {
+    width: 50%;
+}
+
+.nike-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.nike-text {
+    border-left: 3px solid #888888;
+    padding-left: 40px;
+    margin-top: 30px;
+}
+
+.link {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.control {
+    margin-top: 70px;
+    background: url('../images/runners 1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.control-text-section {
+    position: absolute;
+    width: 490px;
+    left: 635px;
+    top: 120px;
+}
+
+.control-title {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.control-text {
+    padding-left: 40px;
+    border-left: 3px solid #FFFFFF;
 }
