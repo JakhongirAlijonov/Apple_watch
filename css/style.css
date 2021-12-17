@@ -26,7 +26,7 @@ body {
 /* CONTAINER */
 
 .container {
-    max-width: 1500px;
+    max-width: 1250px;
     width: 100%;
     padding-left: 125px;
     padding-right: 125px;
@@ -51,6 +51,7 @@ body {
 .site-nav-item {
     list-style: none;
     margin-left: 30px;
+    border-bottom: 1px solid #fff;
 }
 
 .site-nav-item:last-child {
@@ -58,7 +59,7 @@ body {
 }
 
 .site-nav-item:hover {
-    border-bottom: 1px solid #333;
+    border-color: #333333;
 }
 
 .site-nav-link {
@@ -101,10 +102,13 @@ body {
     color: #fff;
     text-decoration: none;
     transition: 0.5s ease;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
 }
 
 .intro-bg {
-    margin-bottom: -30px;
+    display: flex;
 }
 
 .link:hover {
@@ -113,7 +117,7 @@ body {
 }
 
 .central-hr {
-    border: 2px solid #DDDDDD
+    border: 2px solid #DDDDDD;
 }
 
 .features {
@@ -144,7 +148,15 @@ body {
 .more-link {
     color: #EA625C;
     text-decoration: none;
-    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.more-hr {
+    border: 2px solid #EA625C;
+    width: 40px;
+    display: inline-block;
 }
 
 .nike {
@@ -176,16 +188,19 @@ body {
 }
 
 .control {
+    width: 1250px;
+    height: 830px;
     margin-top: 70px;
-    background: url('../images/runners 1.svg');
+    background: url('../images/runners.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .control-text-section {
     position: absolute;
-    width: 490px;
     left: 635px;
     top: 120px;
 }
@@ -195,9 +210,14 @@ body {
     font-size: 50px;
     font-weight: 700;
     line-height: 60px;
+    width: 490px;
+    height: 120px;
 }
 
 .control-text {
+    width: 450px;
+    height: 120px;
     padding-left: 40px;
     border-left: 3px solid #FFFFFF;
+    color: #fff;
 }
